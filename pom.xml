@@ -33,6 +33,14 @@
     <version>2.12.5</version>
 </dependency>
         
+        
+         <dependency>
+            <groupId>com.svb.csvjdbc</groupId>
+            <artifactId>csv</artifactId>
+            <version>1.0.41-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/csvjdbc-1.0.41-SNAPSHOT.jar</systemPath>
+        </dependency>
 
 
 		<dependency>
