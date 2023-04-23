@@ -32,7 +32,7 @@ public class CsvJdbcController {
     	 List<Map<String, String>> rows = new ArrayList<>();
         DriverManager.registerDriver(new CsvDriver());
 
-        String url = "jdbc:relique:csv:/Users/bhamidi/Downloads";
+        String url = "jdbc:relique:csv:src/main/resources";
 
         try (Connection conn = DriverManager.getConnection(url);
              PreparedStatement stmt = conn.prepareStatement(query);
