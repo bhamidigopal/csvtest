@@ -104,5 +104,20 @@ public class CsvJdbcController {
 		
 	}
 	
+	@GetMapping("/like")
+    public List<Catalog> csvdataForLike() throws SQLException {
+		
+		  String query = "SELECT * FROM catalog where api_name like '%Ron%'";
+
+			
+			return getDataAndTransform(query);
+			
+			
+		
+		
+	}
+	
+	
+	
 
 }
